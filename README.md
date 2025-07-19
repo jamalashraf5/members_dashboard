@@ -1,12 +1,78 @@
-# React + Vite
+# 📋 Members Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app to view, filter, and add members using dummy JSON data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Setup Instructions
 
-## Expanding the ESLint configuration
+### 1. Clone the Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+git clone https://github.com/jamalashraf5/member_dashboard.git
+
+2. Install Dependencies
+npm install
+3. Run the Development Server
+npm start
+The app will run at: http://localhost:3000
+
+🛠️ Tools & Libraries Used
+⚛️ React (via Vite or CRA)
+
+🎨 CSS (basic styling or modules)
+
+📁 Dummy JSON for simulating API data
+
+⚙️ React Hooks: useState, useEffect
+
+✨ Features
+🔎 Search members by name (case-insensitive)
+
+✅ Toggle to show only active members
+
+➕ Add a new member via modal form
+
+⏳ Simulated loading delay using setTimeout
+
+⚠️ Displays error message if data fails to load
+
+🧪 Running Tests (If Added)
+Currently, the app has no unit tests.
+
+📌 Suggested setup using Jest + React Testing Library:
+
+npm install --save-dev jest @testing-library/react
+npm test
+Sample test:
+
+import { render, screen } from '@testing-library/react';
+import MemberCard from './MemberCard';
+
+test('renders member name', () => {
+  render(<MemberCard member={{ name: 'Jamal', status: 'Active' }} />);
+  expect(screen.getByText(/Alice/i)).toBeInTheDocument();
+});
+🚀 Deployment
+You can deploy this app on:
+
+🔗 Netlify
+
+🔗 Vercel
+
+🔗 GitHub Pages
+
+To deploy on GitHub Pages:
+
+Install:
+
+npm install gh-pages --save-dev
+In package.json, add:
+
+"homepage": "https://<your-username>.github.io/member_dashboard",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+Deploy:
+
+npm run deploy
