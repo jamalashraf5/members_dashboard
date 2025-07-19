@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Shahrukh Khan",
+      "email": "shahrukh34@gmail.com",
+      "phone": "9876549872",
+      "startDate": "2021-01-10",
+      "status": "Active"
+    },
+    {
+      "name": "Jamal Ashraf",
+      "email": "ashraf@gmail.com",
+      "phone": "7658954321",
+      "startDate": "2022-05-15",
+      "status": "Inactive"
+    },
+    {
+        "name": "Thor",
+        "email": "thorthunderbolt@gmail.com",
+        "phone": "7658954321",
+        "startDate": "2023-07-20",
+        "status": "Active"
+      }
+  ]
+  
