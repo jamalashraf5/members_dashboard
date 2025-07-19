@@ -50,7 +50,6 @@
   - Simulate user events (e.g., search input, checkbox toggle)
   - Form submission adds a new member
 
-```bash
 npm install --save-dev @testing-library/react jest
 Sample Test (MemberCard)
 js
@@ -97,17 +96,3 @@ Full Test Coverage
 Unit, integration, and UI tests with GitHub Actions CI/CD
 
 💡 This walkthrough documents the key design, architecture, and future roadmap for the members-dashboard React app.
-
-yaml
-Copy
-Edit
-
----
-
-Let me know if you'd like me to:
-
-- Automatically add this file to your repo
-- Generate the matching test files
-- Help with deployment or CI/CD setup
-
-✅ Ready to copy, edit, or commit!
